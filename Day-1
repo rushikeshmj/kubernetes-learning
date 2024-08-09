@@ -1,0 +1,10 @@
+Why Kubernetes
+
+Why we are not using docker in production environment.
+Because docker is not supporting below features
+1. It uses single host - docker host relies on single host only.
+2. Autohealing - If one the container is dieing then we have to manually up the the container.
+3. Autoscaling - If load increases on server then autoscaling of conatiner will not happen in docker we have to manually scale up the conatiner.
+4. Simple platform - It has only enterprise level support.
+
+For resolving above above problem in production environment we are using kubernetes.
